@@ -1,4 +1,5 @@
 body {
+    font-size: 15px;
     font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -60,15 +61,81 @@ body {
 }
 
 .page-section {
-	padding: 3rem 0;
+    padding: 3rem 0;
 }
+
+.badges-container {
+    max-width: 55%;
+}
+
+
+/* carousel */
+.swap-on-hover {
+    /* position: relative;
+    width: auto; */
+    min-height: 350px;
+}
+
+.swap-on-hover img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+}
+
+.swap-on-hover .swap-on-hover__front-image {
+    z-index: 4;
+    transition: opacity .5s linear;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+
+
+.swap-on-hover .swap-on-hover__back-image {
+    width: 100%;
+    height: auto;
+}
+
+.swap-on-hover:hover>.swap-on-hover__front-image {
+    opacity: 0;
+}
+
+
+/* .discount::after {
+    content: '-33%';
+    color: black;
+    font-weight: bold;
+    width: auto;
+    padding: 2px 15px;
+    background-color: #d9ff4e;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    z-index: 5;
+} */
+
 
 /*mobile vers -------------------------------------------------------------*/
 @media screen and (max-width: 980px) {
     #mainNav {
         box-shadow: none;
         background-color: transparent;
-        transition: none;
+    }
+
+    #mainNav.navbar-shrink {
+        box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+        background-color: #fff;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #212529;
     }
 
     #mainNav .navbar-brand {
@@ -85,6 +152,11 @@ body {
         padding: 0.45rem 0;
     }
 
+    #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+        color: rgba(0, 0, 0, 0.7);
+        padding: 0.45rem 0;
+    }
+
     .page-section {
         padding: 4rem 0;
     }
@@ -96,5 +168,34 @@ body {
 
     .nav-tabs .nav-link {
         padding: 3px 10px;
+    }
+
+    .badges-container {
+        max-width: 100%;
+    }
+
+}
+
+
+/* carousel */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .swap-on-hover {
+        position: relative;
+        width: auto;
+        min-height: 420px;
     }
 }
