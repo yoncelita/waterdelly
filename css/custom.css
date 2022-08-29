@@ -75,4 +75,17 @@
 		color: rgba(255, 255, 255, 0.7);
 		padding: 0.45rem 0;
 	}
+
+	.page-section {
+		padding: 4rem 0;
+	}
+
+	.nav {
+		flex-wrap: nowrap;
+		font-size: 13px;
+	}
+
+	.nav-tabs .nav-link {
+		padding: 3px 10px;
+	}
 }
