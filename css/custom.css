@@ -1,91 +1,100 @@
+body {
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
 .container-masthead {
-	width: 100%;
-	height: 85vh;
+    width: 100%;
+    height: 85vh;
 }
 
 #video1 {
-	width: 100%;
-	height: 85vh;
-	object-fit: cover;
-	object-position: top;
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    object-position: top;
 }
 
 .bg-primary {
-	--bs-bg-opacity: 1;
-	background-color: turquoise !important;
+    --bs-bg-opacity: 1;
+    background-color: turquoise !important;
 }
 
 .starter-pack-container {
-	position: relative;
+    position: relative;
 }
 
 .st-img-1 {
-	opacity: 1;
-	display: block;
-	width: 100%;
-	height: auto;
-	transition: .5s ease;
-	backface-visibility: hidden;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
 }
 
 .middle {
-	transition: .5s ease;
-	opacity: 0;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	text-align: center;
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .starter-pack-container:hover .st-img-1 {
-	opacity: 0.3;
+    opacity: 0.3;
 }
 
 .starter-pack-container:hover .middle {
-	opacity: 1;
+    opacity: 1;
 }
 
 .text {
-	background-color: turquoise;
-	color: white;
-	font-size: 16px;
+    background-color: turquoise;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
+}
+
+.page-section {
+	padding: 3rem 0;
 }
 
 /*mobile vers -------------------------------------------------------------*/
 @media screen and (max-width: 980px) {
-	#mainNav {
-		box-shadow: none;
-		background-color: transparent;
-		transition: none;
-	}
+    #mainNav {
+        box-shadow: none;
+        background-color: transparent;
+        transition: none;
+    }
 
-	#mainNav .navbar-brand {
-		color: rgba(255, 255, 255, 0.7);
-	}
+    #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.7);
+    }
 
-	.navbar-light .navbar-toggler {
-		color: transparent;
-		border-color: transparent;
-	}
+    .navbar-light .navbar-toggler {
+        color: transparent;
+        border-color: transparent;
+    }
 
-	#mainNav .navbar-nav .nav-item .nav-link {
-		color: rgba(255, 255, 255, 0.7);
-		padding: 0.45rem 0;
-	}
+    #mainNav .navbar-nav .nav-item .nav-link {
+        color: rgba(255, 255, 255, 0.7);
+        padding: 0.45rem 0;
+    }
 
-	.page-section {
-		padding: 4rem 0;
-	}
+    .page-section {
+        padding: 4rem 0;
+    }
 
-	.nav {
-		flex-wrap: nowrap;
-		font-size: smaller;
-	}
+    .nav {
+        flex-wrap: nowrap;
+        font-size: smaller;
+    }
 
-	.nav-tabs .nav-link {
-		padding: 3px 10px;
-	}
+    .nav-tabs .nav-link {
+        padding: 3px 10px;
+    }
 }
