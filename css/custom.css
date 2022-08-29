@@ -82,7 +82,7 @@
 
 	.nav {
 		flex-wrap: nowrap;
-		font-size: 13px;
+		font-size: smaller;
 	}
 
 	.nav-tabs .nav-link {
