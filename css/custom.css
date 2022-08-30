@@ -126,11 +126,14 @@ body {
 }
 
 .owl-theme .owl-nav.disabled + .owl-dots {
-    margin-top: 30px;
+    margin-top: 30px!important;
 }
 
+.image-info-section {
+    width: 100%;
+}
 
-/*mobile vers -------------------------------------------------------------*/
+/*mobile -------------------------------------------------------------*/
 @media screen and (max-width: 980px) {
     #mainNav {
         box-shadow: none;
@@ -181,29 +184,4 @@ body {
     .badges-container {
         max-width: 100%;
     }
-
 }
-
-
-/* carousel */
-/* @media screen and (max-width: 800px) {
-    .column {
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .column {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-
-    .swap-on-hover {
-        position: relative;
-        width: auto;
-        min-height: 420px;
-    }
-} */
