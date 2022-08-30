@@ -1,54 +1,20 @@
-
-$(function() {
-    var owl = $(".gallery-carousel");
-    owl.owlCarousel({
-      items: 6,
-      margin: 10,
-      autoplay: true,
-      autoplayTimeout: 3000,
-      loop: true,
-      nav: false,
-      dots: false,
-      responsive:{
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    responsiveClass: true,
+    responsive: {
         0:{
-            items:1,
-            dots: true
+            items: 1,
         },
-        600:{
-            items:3
+        768:{
+            items: 2,
         },
-        1000:{
-            items:7
+        1100:{
+            items: 3,
+        },
+        1400:{
+            items: 4,
+            loop: false,
         }
     }
-    });
-  });
-  
-
-
-  // related products
-  $(function() {
-    // Owl Carousel
-    var owl = $(".related-prod-carousel");
-    owl.owlCarousel({
-      items: 4,
-      margin: 10,
-    //   autoplay: true,
-    //   autoplayTimeout: 3000,
-      loop: true,
-      nav: false,
-      dots: false,
-      responsive:{
-        0:{
-            items:1,
-            dots: true
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:4
-        }
-    }
-    });
-  });
+});
