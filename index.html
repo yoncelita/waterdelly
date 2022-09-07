@@ -22,20 +22,26 @@
     <link href="css/styles.css" rel="stylesheet" />
 
     <!-- SimpleLightbox plugin CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" /> -->
 
     <!-- custom CSS -->
     <link href="css/custom.css" rel="stylesheet" />
 
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- owl carousel -->
     <link rel="stylesheet" href="owl_carousel/owl.carousel.css">
     <link rel="stylesheet" href="owl_carousel/owl.theme.default.css">
-    <!-- custom css -->
-    <link rel="stylesheet" href="style.css">
+
+    <!-- Vendor CSS -->
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/owl.carousel/assets/owl.theme.default.min.css">
+
+    <link href="css/theme.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -77,7 +83,7 @@
                     <p class="text-white mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
                         laudantium facere distinctio excepturi doloribus omnis ipsum dignissimos alias temporibus nam
                         similique sunt repellat, iure cum quo accusantium! Sapiente, libero natus.</p>
-                    <a class="btn btn-light btn-l px-4" href="#">See more</a>
+                    <a class="btn btn-light btn-l px-4 text-dark fs-6" href="#">See more</a>
                 </div>
             </div>
         </div>
@@ -86,13 +92,13 @@
     <!-- STARTER'S, BESTSELLERS. ALL FLAVOURS CAROUSEL-->
     <section class="mt-5 my-lg-5 py-lg-5" id="products">
         <nav>
-            <div class="nav nav-tabs justify-content-around justify-content-lg-center" id="nav-tab" role="tablist">
-                <button class="nav-link active" id="nav-starters-tab" data-bs-toggle="tab"
+            <div class="nav nav-tabs justify-content-evenly justify-content-lg-center" id="nav-tab" role="tablist">
+                <button class="nav-link active fw-bold" id="nav-starters-tab" data-bs-toggle="tab"
                     data-bs-target="#nav-starters" type="button" role="tab" aria-controls="nav-starters"
                     aria-selected="true">STARTER'S PACK</button>
-                <button class="nav-link" id="nav-bestsellers-tab" data-bs-toggle="tab" data-bs-target="#nav-bestsellers"
+                <button class="nav-link fw-bold" id="nav-bestsellers-tab" data-bs-toggle="tab" data-bs-target="#nav-bestsellers"
                     type="button" role="tab" aria-controls="nav-bestsellers" aria-selected="false">BESTSELLERS</button>
-                <button class="nav-link" id="nav-flavours-tab" data-bs-toggle="tab" data-bs-target="#nav-flavours"
+                <button class="nav-link fw-bold" id="nav-flavours-tab" data-bs-toggle="tab" data-bs-target="#nav-flavours"
                     type="button" role="tab" aria-controls="nav-flavours" aria-selected="false">ALL FLAVOURS</button>
             </div>
         </nav>
@@ -109,7 +115,7 @@
                                 Cumque est neque facilis debitis, repellat dolorem.</p> -->
                         </div>
 
-                        <div class="row g-4 my-5 mx-auto owl-carousel owl-theme">
+                        <div class="row g-4 my-5 mx-auto owl-carousel owl-theme index-carousel">
                             <div class="col product-item mx-auto">
                                 <div class="product-img">
                                     <img src="assets/images/product-placeholder.webp" alt=""
@@ -308,7 +314,7 @@
                                 Cumque est neque facilis debitis, repellat dolorem.</p> -->
                         </div>
 
-                        <div class="row g-4 my-5 owl-carousel owl-theme">
+                        <div class="row g-4 my-5 owl-carousel owl-theme index-carousel">
                             <div class="col product-item mx-auto">
                                 <div class="product-img">
                                     <img src="assets/images/product-placeholder.webp" alt=""
@@ -508,7 +514,7 @@
                                 Cumque est neque facilis debitis, repellat dolorem.</p> -->
                         </div>
 
-                        <div class="row g-4 my-5 mx-auto owl-carousel owl-theme">
+                        <div class="row g-4 my-5 mx-auto owl-carousel owl-theme index-carousel">
                             <div class="col product-item mx-auto">
                                 <div class="product-img">
                                     <img src="assets/images/product-placeholder.webp" alt=""
@@ -702,7 +708,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 order-md-2 p-4 p-lg-5">
-                    <h2 class="fw-normal lh-2">Change your life.
+                    <h2 class="fw-normal lh-2 my-1">Change your life.
                         <h4 class="text-muted">See for yourself.</h4>
                     </h2>
                     <p class="lead-p py-5">Another featurette? Of course. More placeholder content here to give you an
@@ -740,12 +746,12 @@
 
 
     <!-- CTA -->
-    <section class="page-section bg-dark text-white">
+    <section class="page-section bg-dark text-white my-lg-5 py-lg-5">
         <div class="container px-4 px-lg-5 text-center">
-            <h2>It's what's inside that counts.</h2>
+            <h2 class="text-light">It's what's inside that counts.</h2>
             <hr class="divider divider-light">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <a class="mt-5 btn btn-light btn-l px-4" href="">Learn more</a>
+            <p class="text-light">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+            <!-- <a class="mt-5 btn btn-light btn-l px-4" href="">Learn more</a> -->
         </div>
     </section>
 
@@ -1002,7 +1008,7 @@
                     <!-- reviews -->
                     <div class="mb-4 pb-4 border-bottom">
                         <div class="d-flex mb-3 align-items-center">
-                            <img src="assets/img/avatar-4.png" alt="" class="mx-3 rounded-circle avatar-lg" width="50">
+                            <img src="assets/images/avatar-4.png" alt="" class="mx-3 rounded-circle avatar-lg" width="50">
                             <div class="ml-2">
                                 <h6 class="mb-1">
                                     customer Name
@@ -1031,7 +1037,7 @@
                     <!-- reviews -->
                     <div class="mb-4 pb-4 border-bottom">
                         <div class="d-flex mb-3 align-items-center">
-                            <img src="assets/img/avatar-4.png" alt="" class="mx-3 rounded-circle avatar-lg" width="50">
+                            <img src="assets/images/avatar-4.png" alt="" class="mx-3 rounded-circle avatar-lg" width="50">
                             <div class="ml-2">
                                 <h6 class="mb-1">
                                     customer Name
@@ -1060,7 +1066,7 @@
                     <!-- reviews -->
                     <div class="mb-4 pb-4 border-bottom">
                         <div class="d-flex mb-3 align-items-center">
-                            <img src="assets/img/avatar-4.png" alt="" class="mx-3 rounded-circle avatar-lg" width="50">
+                            <img src="assets/images/avatar-4.png" alt="" class="mx-3 rounded-circle avatar-lg" width="50">
                             <div class="ml-2">
                                 <h6 class="mb-1">
                                     customer Name
@@ -1111,7 +1117,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- owl carousel -->
     <script src="owl_carousel/owl.carousel.js"></script>
-    <script src="js/script.js"></script>
+    <script src="js/custom.js"></script>
     <script src="js/scripts.js"></script>
 
     <!-- Theme Base, Components and Settings -->
